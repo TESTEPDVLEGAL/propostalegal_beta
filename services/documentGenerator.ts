@@ -1,5 +1,5 @@
 // FIX: Implemented the document generator service using Gemini API to resolve 'Cannot find name' errors.
-import { QuoteData } from '../types';
+import { QuoteData } from '../types.js';
 
 /**
  * Envia os dados do orçamento para um endpoint de backend seguro, que por sua vez chama a API da Gemini.

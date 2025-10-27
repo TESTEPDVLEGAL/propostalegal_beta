@@ -2,7 +2,7 @@ import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { Packer, Document, Paragraph, TextRun, Table, TableRow, TableCell, WidthType, AlignmentType, HeadingLevel } from 'docx';
 import saveAs from 'file-saver';
-import { QuoteData } from '../types';
+import { QuoteData } from '../types.js';
 
 const formatCurrency = (value: number) => `R$ ${value.toFixed(2)}`;
 

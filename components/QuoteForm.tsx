@@ -1,6 +1,6 @@
 // FIX: Implemented the QuoteForm component to resolve 'Cannot find name' errors.
 import React, { useState, useMemo, useEffect } from 'react';
-import { QuoteData, ClientInfo } from '../types';
+import { QuoteData, ClientInfo } from '../types.js';
 import { 
     INITIAL_CLIENT_INFO, 
     DEFAULT_COMPANY_INFO, 
@@ -10,9 +10,9 @@ import {
     ONE_TIME_SERVICES,
     ALL_MONTHLY_ITEMS,
     ADDITIONAL_SERVICES
-} from '../constants';
-import { generateQuoteWithAI } from '../services/documentGenerator';
-import { exportToPdf, exportToWord } from '../services/fileExporter';
+} from '../constants.js';
+import { generateQuoteWithAI } from '../services/documentGenerator.js';
+import { exportToPdf, exportToWord } from '../services/fileExporter.js';
 
 export const QuoteForm: React.FC = () => {
   const [clientInfo, setClientInfo] = useState<ClientInfo>(INITIAL_CLIENT_INFO);

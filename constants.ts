@@ -1,5 +1,5 @@
 // FIX: Defined constants for initial state to resolve 'Cannot find name' errors.
-import { ClientInfo, CompanyInfo } from './types';
+import { ClientInfo, CompanyInfo } from './types.js';
 
 export const INITIAL_CLIENT_INFO: ClientInfo = {
   name: '',

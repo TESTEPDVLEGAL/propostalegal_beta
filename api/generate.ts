@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { QuoteData } from '../types';
+import { QuoteData } from '../types.js';
 
 /**
  * Vercel Serverless Function
