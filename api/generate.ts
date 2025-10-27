@@ -40,7 +40,6 @@ export default async function handler(req: Request) {
     const monthlyTotal = monthlySubtotal * (1 - (quoteData.discount / 100));
     const oneTimeTotal = quoteData.oneTimeItems.reduce((acc, item) => acc + item.quantity * item.unitPrice, 0);
 
-    // FIX: Moved formatCurrency function declaration before its usage to resolve block-scoped variable errors.
     const formatCurrency = (value: number) => `R$ ${value.toFixed(2)}`;
 
     const prompt = `
